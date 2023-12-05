@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    padding: 0px;
+    background-color: rgb(219,220,225);
+    font-family: 'Inter', sans-serif;
+}
+header{
+    height: 5rem;
+    width: 80rem;
+    padding: 0.5rem;
+    border-radius: 1rem ;
+    margin:1rem ;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255,255,255);
+}
+nav{
+    display: flex;
+
+}
