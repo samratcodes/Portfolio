@@ -9,16 +9,236 @@ body{
     font-family: 'Inter', sans-serif;
 }
 header{
-    height: 5rem;
+  height: max-content;
     width: 80rem;
     padding: 0.5rem;
     border-radius: 1rem ;
     margin:1rem ;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: rgb(255,255,255);
+    box-shadow:  9px -9px 18px #c4c4c4,
+    -9px 9px 8px #acacac;
 }
+.logo {
+    border-radius: 0.5rem;
+    background-color: rgb(219, 220, 225);
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    overflow: hidden; 
+}
+
+.logo1 {
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: aliceblue;
+}
+
+ .logo2{
+    font-size: 1.2rem;
+    animation: slideIn 15s  infinite;
+}
+
+@keyframes slideIn {
+    0% {
+  
+        transform: translateX(0%);
+    }
+
+    /* 25% {
+        transform: translateX(52%); 
+    } */
+    50% {
+        transform: translateX(52%); 
+    }
+    /* 75% {
+        transform: translateX(52%); 
+    } */
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
 nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    padding: 0rem  1rem;
+}
+.navoption{
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    padding: 1rem;
+    
+}
+
+.navoption:hover ,.navactive{
+    background-color:rgb(158, 158, 158);
+    color: white;
+}
+
+.header_icon{
+
+    width: max-content;
+    margin-right: 2rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow:  0px 0px 20px #000000,
+    0px 0px 20px #000000;}
+    .header_icon i{
+        padding: 0.2rem;
+    }
+#modeactive{
+    display:none;
+}
+.profile{
+    width: 20rem;
+    padding: 1rem;
+    height: 70vh;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color:white;
+    box-shadow:  9px -9px 18px #c4c4c4,
+    -9px 9px 8px #acacac;
+}
+.profile_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 100%;
+    background-color:rgb(219,220,225);
+    overflow: hidden;
+}
+.profile_pic img{
+    margin-right: -10px;
+   height: 20rem;
+   transform: scale(1.1);
+}
+.profile_text{
+    font-weight: 500;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile_button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Hireme , .How_i_work{
+    font-size: 1rem;
+    padding:0.5rem 1rem ;
+    width: max-content;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 2rem;
+}
+.intro{
+    width: 40rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.typedjs{
+    display: flex;
+    font-size: 2rem;
+    color:rgb(24,66,181);
+}
+.introname{
+    font-size: 3rem;
+}
+main{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 80rem;
+}
+.mainright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainright_text{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.links{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.links a{
+    background-color: rgb(219,220,225);
+    border: 2px solid rgb(219,220,225) ;
+    color:rgb(24,66,181);
+    border-radius: 50%;
+    padding:0.7rem 1rem;
+    box-shadow:  9px -9px 18px #c4c4c4,
+    -9px 9px 8px #acacac;
+ 
+}
+.links a:hover{
+   background-color: rgb(24,66,181);
+   color:rgb(219,220,225);
+}
+.menu_icon{
+    display: none;
+}
+#inactivemenu{
+    display: none;
+}
+@media screen and (max-width: 1300px) {
+    header{
+        width: 100%;
+    display: none;
+    flex-direction: column;
+    }
+    .logo{
+        display: none;
+    }
+    .menu_icon{
+        font-size: 2rem;
+        display: flex;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .profile{
+     margin-top:2rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .intro{
+        width: 100%;
+       }
+     .links{
+        width: 100%;
+     }  
 
 }
