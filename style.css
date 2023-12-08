@@ -246,10 +246,54 @@ main{
     display: none;
 }
 .Achievements{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
    border-top: 3px solid rgb(248, 248, 248);
     margin-top: 5rem;
+    background-color: #000000;
 }
+.Achievements_section{
+    width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Achievements_title{
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: white;
+}
+.OsmHackfest{
+    margin-top:2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.OsmHackfest_pic {
+width: 20rem;
+height: 16rem;
+overflow: hidden;
+border-radius: 2rem;
+}
+.OsmHackfest_pic img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    }
+.OsmText{
+width: 30rem;
+}
+    .line {
+        width: 17rem;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.822);
+      }
 @media screen and (max-width: 1300px) {
     .menu{
         display: flex;
@@ -259,6 +303,7 @@ main{
         display: flex;
     }
     header{
+        margin:0rem ;
         width: 100%;
     display: none;
     flex-direction: column;
