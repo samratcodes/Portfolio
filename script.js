@@ -14,5 +14,36 @@
 bars.classList.toggle('activemenu');
 xmark.classList.toggle('activemenu');
 header.style.display=header.style.display=='flex'?'none':'flex';
-
    })
+ 
+   const cards = [
+      document.querySelector('.card1'),
+      document.querySelector('.card2'),
+      document.querySelector('.card3'),
+      document.querySelector('.card4'),
+      document.querySelector('.card5'),
+      document.querySelector('.card6'),
+    ];
+    
+    const ExperiencesSlider = document.querySelector('.ExperiencesSlider_card');
+    let slideCounter = 1;
+    
+   const repeat =function(cards,sign){
+      cards.forEach(card=>{
+         card.style.transform =`translate(${sign}${slideCounter*100}%)` ;
+            })
+   }
+    setInterval(function() {
+      repeat(cards,sign='-');
+ if(slideCounter==4){
+   slideCounter=0;
+   repeat(cards,sign='+');
+
+ }
+ else{
+   slideCounter++;
+ };
+      
+      
+    },2500);
+    

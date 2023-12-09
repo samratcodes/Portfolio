@@ -75,10 +75,17 @@ nav{
     font-weight: 500;
     border-radius: 1rem;
     padding: 1rem;
-    
+    transition: 500ms;
 }
 
-.navoption:hover ,.navactive{
+.navoption:hover {
+    transition: 500ms;
+   background-color:rgb(218, 218, 218);
+    color: white;
+   
+}
+
+.navactive{
     background-color:rgb(158, 158, 158);
     color: white;
 }
@@ -113,6 +120,7 @@ nav{
     justify-content:space-between;
     align-items: center;
     background-color:white;
+  
 }
 .cardinner{
     width: 100%;
@@ -226,7 +234,7 @@ main{
     padding:0.7rem 1rem;
     box-shadow:  9px -9px 18px #c4c4c4,
     -9px 9px 8px #acacac;
- 
+    transition: 1s;
 }
 .links a:hover{
    background-color: rgb(24,66,181);
@@ -252,8 +260,10 @@ main{
     align-items: center;
     justify-content: center;
     width: 100%;
-   border-top: 3px solid rgb(248, 248, 248);
-    margin-top: 5rem;
+    border-top: 3px solid rgb(248, 248, 248);
+    border-bottom: 3px solid rgb(248, 248, 248);
+    margin: 5rem 0rem 2rem 0rem;
+    padding-bottom: 5rem;
     background-color: #000000;
 }
 .Achievements_section{
@@ -294,6 +304,165 @@ width: 30rem;
         height: 1px;
         background-color: rgba(255, 255, 255, 0.822);
       }
+.Experiences_title{
+        color: rgb(37, 37, 37);
+    }
+    .Experiences_projects{
+        padding: 2rem 0rem ;
+        border-bottom: 3px solid rgb(248, 248, 248);
+        width:100% ;
+    }
+    .Experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ExperiencesSlider{
+        border-radius: 1rem;
+        margin-top: 2rem;
+        overflow: hidden;
+        background-color:rgb(219,220,225);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 20rem;
+        width: 90%;
+    }
+    .HTML{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .HTML_skill{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .html_container{
+        display: flex;
+        width: 20rem;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+    }
+    .linee{
+        background-color:rgb(24,66,181);
+        width: 90%;
+        height: 100%;
+    }
+    .ExperiencesSlider_card div{
+        padding: 1rem;
+        border-radius: 3rem;
+         box-shadow:  9px -9px 18px #c4c4c4,
+    -9px 9px 8px #acacac;
+        color: aliceblue;
+        object-fit: cover;
+        margin:0rem 1rem;
+        width: 25rem;
+        height: 14rem;
+        transition: 500ms;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .ExperiencesSlider_card div:hover{
+        transition: 500ms;
+       
+    transform: scale(1.1);
+    }
+ .card1 div{
+    background: url(  https://images.pexels.com/photos/6129972/pexels-photo-6129972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/6129972/pexels-photo-6129972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .card2 div{
+    
+    background: url(https://imgs.search.brave.com/HIDxZrFD2MNFRx9L6hifx-nmPHJrZXGFaaYXnP_3BSM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8w/Mi8yOC8xNy8zMS90/YXNrcy00MDI2Mzk4/XzY0MC5qcGc );
+    object-fit: cover;
+ }
+ .card3 div{
+    background: url(https://www.digitalyeti.com.np/images/logo.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .card4 div{
+    background: url(https://imgs.search.brave.com/myOIQauaE-VhuOEHv4BA20kyZ8XqJFqbAU0Tqw34aYI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTE2/MzM4MjIvcGhvdG8v/c3BhY2UtZ2FsYXh5/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz0yRDh5MVlWNXpi/aGhlV0FTZUNUcWlu/MWJUTUNzZW1Od2ds/cUlzYWdiRkRZPQ);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ .card5 div{
+    background: url(https://imgs.search.brave.com/hlH2lHkCR7xdqCLSwT2iEPri2fOSYxrN8fvSL1SjWZY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ0/MDMwNDE0Mi9waG90/by9jYXJkcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Snln/eWVYYU1OZEFnWkR4/N19oS3BoamRYU3Z4/dk1wTzlFOU5mSURU/SDhabz0  );
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.card6 div{
+    background: url(https://imgs.search.brave.com/XT5Qnwknr-HmhDlBq8Isbv52vnuzDb9aU3r4MckdY2g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9uZWls/cGF0ZWwuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE4LzA1/L2Vjb21tZXJjZS1w/cm9kdWN0LWltYWdl/cy5qcGc);
+}
+.ExperiencesSlider_card{
+        transition: 500ms;
+    }
+  .ExperiencesSlider_card a{
+    border-radius:1rem ;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color:rgb(24,66,181);
+    text-decoration: none;
+  }  
+  .ExperiencesSlider_card a:hover{
+    transition: 400ms;
+    background-color: white;
+    color:rgb(24,66,181);
+   
+  }
+.ESC_top{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.ESC_Description{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Skills{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5rem;
+    background-color: #000000;
+}
+.skills_section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills_title{
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: white;
+}
+.Experiences_title{
+    font-weight: 700;
+    font-size: 2rem;
+}
 @media screen and (max-width: 1300px) {
     .menu{
         display: flex;
@@ -343,6 +512,41 @@ width: 30rem;
     font-size: 0.8rem;
     padding: 2px;
 }
+.mainright{
+    padding-left: 1rem;
+}
+.Achievements_title{
+    font-size: 3.5rem;
+}
+.Achievements_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.OsmHackfest{
+    margin-top:2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.OsmText{
+    width: 90%;
+    }
+        .line {
+            width:  4px;
+            height:4rem;
+            background-color: rgba(255, 255, 255, 0.822);
+          }
+.ExperiencesSlider_card div{
+    width: 15rem;
+          }
+.Experiences_title{
+            font-weight: 700;
+            font-size: 2rem;
+        }
 }
 @media screen and (max-width: 700px) {
     .intro{
@@ -351,5 +555,8 @@ width: 30rem;
      .links{
         width: 100%;
      }  
+     .Achievements_title{
+        font-size: 2.5rem;
+    }
 
 }
