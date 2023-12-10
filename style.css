@@ -367,7 +367,7 @@ width: 30rem;
         border-radius: 1rem;
         background-color: rgb(24, 66, 181);}
         .linee {
-        animation: maybe 10s forwards infinite; 
+        animation: maybe 20s forwards infinite; 
     }
 
     @keyframes maybe {
@@ -383,7 +383,7 @@ width: 30rem;
         }
     }
     .linee_Angular{
-        animation: maybeangular 10s forwards infinite; 
+        animation: maybeangular 20s forwards infinite; 
     }
     @keyframes maybeangular {
         0% {
@@ -397,7 +397,7 @@ width: 30rem;
         }
     }
     .linee_React{
-        animation: maybereact 10s forwards infinite; 
+        animation: maybereact 20s forwards infinite; 
     }
     @keyframes maybereact {
         0% {
@@ -411,7 +411,7 @@ width: 30rem;
         }
     }
     .linee_js,.linee_Tailwind{
-        animation: maybejs 10s forwards infinite; 
+        animation: maybejs 20s forwards infinite; 
     }
     @keyframes maybejs {
         0% {
@@ -425,7 +425,7 @@ width: 30rem;
         }
     }
     .linee_css{
-        animation: maybecss 10s forwards infinite; 
+        animation: maybecss 20s forwards infinite; 
     }
     @keyframes maybecss {
         0% {
