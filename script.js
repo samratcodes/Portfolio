@@ -46,4 +46,75 @@ header.style.display=header.style.display=='flex'?'none':'flex';
       
       
     },2500);
+
+
+    const map = L.map('map').setView([27.6710, 84.4304], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
     
+    L.marker([27.6710, 84.4304]).addTo(map)
+        .bindPopup('Bharatpur, Chitwan, Nepal')
+        .openPopup();
+    
+
+// Scroll into view
+const Home = document.querySelector('.Home');
+const Achievement = document.querySelector('.Achievement');
+const Skills = document.querySelector('.skills');
+const projects_experiences = document.querySelector('.projects_experiences');
+const contact = document.querySelector('.contact');
+
+const Experiences = document.querySelector('.Experiences_projects');
+const Home_section =  document.querySelector('main');
+const Achievements_section =  document.querySelector('.Achievements_section');
+const skills_section =document.querySelector('.Skills')
+const Contact_section= document.querySelector('.contact_me')
+const raw = [Home, Achievement, Skills, projects_experiences, contact];
+
+function scrollToTall(data) {
+  data.scrollIntoView({ behavior: 'smooth' });
+}
+
+Home.addEventListener('click', function() {
+  scrollToTall(Home_section);
+});
+
+Achievement.addEventListener('click', function() {
+  scrollToTall(Achievements_section);
+});
+
+Skills.addEventListener('click', function() {
+  scrollToTall(skills_section);
+});
+
+projects_experiences.addEventListener('click', function() {
+  scrollToTall(Experiences);
+});
+
+contact.addEventListener('click', function() {
+  scrollToTall(Contact_section);
+});
+
+const AllSection = [Home_section,Achievements_section,skills_section,Experiences,Contact_section]
+
+const revealSection=function(entries,observer){
+  const [entry] = entries;
+if(!entry.isIntersecting) return;
+
+if (entry.target.classList.contains('hidden')) {
+  entry.target.classList.remove('hidden');
+}
+else{
+  entry.target.classList.remove('hiddenn');
+}
+}
+
+const SectionObserver= new IntersectionObserver(revealSection,{
+  root:null,
+  threshold:0.12,
+})
+AllSection.forEach(function(section){
+  SectionObserver.observe(section);
+});
