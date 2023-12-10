@@ -113,7 +113,7 @@ else{
 
 const SectionObserver= new IntersectionObserver(revealSection,{
   root:null,
-  threshold:0.12,
+  threshold:0.1,
 })
 AllSection.forEach(function(section){
   SectionObserver.observe(section);

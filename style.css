@@ -642,7 +642,7 @@ footer{
 }
 @media screen and (max-width: 1300px) {
     .contact_me{
-        height: 35rem;
+        height: 65rem;
     }
     .CMD_map{
         height: 100%;
