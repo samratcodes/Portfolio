@@ -6,7 +6,7 @@
     backDelay : 1000,
     loop : true
    });
-   const header =document.querySelector('header');
+   const header = document.querySelector('header');
    const bars=document.querySelector('.bars');
    const xmark=document.querySelector('.cross')
    const menuicon= document.querySelector('.menu');
@@ -72,10 +72,14 @@ const Achievements_section =  document.querySelector('.Achievements_section');
 const skills_section =document.querySelector('.Skills')
 const Contact_section= document.querySelector('.contact_me')
 const raw = [Home, Achievement, Skills, projects_experiences, contact];
-
+const goto = document.querySelector('.goto_top');
+ const body = document.querySelector('body');
 function scrollToTall(data) {
   data.scrollIntoView({ behavior: 'smooth' });
 }
+goto.addEventListener('click', function() {
+scrollToTall(body);
+});
 
 Home.addEventListener('click', function() {
   scrollToTall(Home_section);

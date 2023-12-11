@@ -640,6 +640,22 @@ footer{
     margin: 20px;
     font-size: medium;
 }
+.goto_top{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 10px;
+   right: 10px;
+   font-size: 0.8rem;
+   font-family:'Silkscreen', sans-serif;
+}
+.goto_top i{
+    color: #000000;
+    font-size: 2.3rem;
+  
+}
 @media screen and (max-width: 1300px) {
     .contact_me{
         height: 65rem;
