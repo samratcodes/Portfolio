@@ -514,14 +514,14 @@ width: 30rem;
   .ExperiencesSlider_card a{
     border-radius:1rem ;
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: white;
     background-color:rgb(24,66,181);
     text-decoration: none;
   }  
   .ExperiencesSlider_card a:hover{
-    transition: 400ms;
+    transition: 900ms;
     background-color: white;
     color:rgb(24,66,181);
    
@@ -601,9 +601,9 @@ overflow: hidden;
     transform: translateX(5rem) ;
   }
   .hiddenn{
-    transition: 1s;  
+    transition: 500s;  
     opacity: 0;
-    transform: translateY(8rem) ;
+    transform: translateY(4rem) ;
   }
 .CMDD_Name{
     padding: 0.5rem;
@@ -732,9 +732,7 @@ footer{
     .card{
      margin-top:2rem;
     }
-    .profile_pic_back img ,.profile_pic img{
-        
-    }
+
 .profile,.profileback{
     font-size: 0.8rem;
     padding: 2px;
