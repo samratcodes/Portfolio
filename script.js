@@ -81,6 +81,7 @@ goto.addEventListener('click', function() {
 scrollToTall(body);
 });
 
+
 Home.addEventListener('click', function() {
   scrollToTall(Home_section);
 });
@@ -122,3 +123,13 @@ const SectionObserver= new IntersectionObserver(revealSection,{
 AllSection.forEach(function(section){
   SectionObserver.observe(section);
 });
+//Navbar active
+
+const navOptions = document.querySelectorAll(".navoption");
+
+    navOptions.forEach(option => {
+        option.addEventListener("click", () => {
+            navOptions.forEach(opt => opt.classList.remove("navactive"));
+            option.classList.add("navactive");
+        });
+    });

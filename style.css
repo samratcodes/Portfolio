@@ -10,6 +10,10 @@ body{
     font-family: 'Inter', sans-serif;
 }
 header{
+    position: sticky;
+    top:0.3rem;
+    z-index: 1000;
+    margin-top: 3rem;
     transition: 2s;
   height: max-content;
     width: 80rem;
@@ -41,27 +45,6 @@ header{
 
  .logo2{
     font-size: 1.2rem;
-    animation: slideIn 15s  infinite;
-}
-
-@keyframes slideIn {
-    0% {
-  
-        transform: translateX(0%);
-    }
-
-    /* 25% {
-        transform: translateX(52%); 
-    } */
-    50% {
-        transform: translateX(52%); 
-    }
-    /* 75% {
-        transform: translateX(52%); 
-    } */
-    100% {
-        transform: translateX(0%); 
-    }
 }
 
 nav{
@@ -104,6 +87,33 @@ nav{
     }
 #modeactive{
     display:none;
+}
+.Download{
+    margin: 2rem;
+}
+.Download i{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(24,66,181);
+}
+.Download a{
+    font-weight: 600;
+    font-size: 1.2rem;
+text-decoration: none;
+background-color: rgb(167, 171, 184);
+border: 2px solid  rgb(255, 255, 255);
+padding:0.5rem;
+border-radius: 1rem;
+color: rgb(255, 255, 255);
+transition: 500ms;
+}
+.Download a:hover{
+    transition: 300ms;
+    border: 2px solid  rgb(255, 255, 255);
+    background:rgb(24,66,181);
+    i{
+        color: rgb(255, 255, 255);
+    }
 }
 .card{
   
@@ -247,8 +257,7 @@ main{
    transition: 1s;
 }
 .menu{
-
-    width: 100%;
+   width: 99%;
     display: none;
     font-size: 3rem;
     background-color: rgb(255,255,255);
@@ -456,11 +465,6 @@ width: 30rem;
         justify-content: space-between;
 
     }
-    .ExperiencesSlider_card div:hover{
-        transition: 500ms;
-       
-    transform: scale(1.1);
-    }
  .card1 div{
     background: url(https://imgs.search.brave.com/dT7kUDxXbLmX8tL6jazh-BDbKchkxnlQb5v_P4ycrew/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2FuaXR5LmlvL2lt/YWdlcy9vcmRnaWt3/ZS9wcm9kdWN0aW9u/LzUwODM0ODNjNmQ4/NDI0ZjNhYmQzODZh/YmExZDRkNGEzODU0/ZDFkOWMtODAweDYw/MC5wbmc_dz04MDAm/aD02MDAmYXV0bz1m/b3JtYXQ);
     object-fit: cover;
@@ -469,9 +473,12 @@ width: 30rem;
     background-repeat: no-repeat;
  }
  .card2 div{
-    
-    background: url(https://imgs.search.brave.com/8AGjOg9gKER29fG29VAcLaQbFSCbN6w1nxB6bDjOO3I/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91aXph/cmQuaW8vc3RhdGlj/LzFkOGNhZWMwYzVi/ZTYzOTZmNjlkNjE3/ZDMwYmQ0YjE4L2Q5/YmRmL3RvLWRvLXdl/Yi1hcHAtdXBjb21p/bmcucG5n);
+    background: url(Ecommerce.png);
     object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
  }
  .card3 div{
     background: url(https://imgs.search.brave.com/woBl1lV2xE3rH7FrUg8Mz9jEYORJgKlJ8ZP2BfAF36E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9odG1sLXN5c3Rl/bS13ZWJzaXRlcy1j/b25jZXB0XzIzLTIx/NTAzMjM1NTIuanBn/P3NpemU9NjI2JmV4/dD1qcGc);
@@ -495,7 +502,11 @@ width: 30rem;
     background-repeat: no-repeat;
  }
 .card6 div{
-    background: url(https://imgs.search.brave.com/XT5Qnwknr-HmhDlBq8Isbv52vnuzDb9aU3r4MckdY2g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9uZWls/cGF0ZWwuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE4LzA1/L2Vjb21tZXJjZS1w/cm9kdWN0LWltYWdl/cy5qcGc);
+    background:url(https://imgs.search.brave.com/8AGjOg9gKER29fG29VAcLaQbFSCbN6w1nxB6bDjOO3I/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91aXph/cmQuaW8vc3RhdGlj/LzFkOGNhZWMwYzVi/ZTYzOTZmNjlkNjE3/ZDMwYmQ0YjE4L2Q5/YmRmL3RvLWRvLXdl/Yi1hcHAtdXBjb21p/bmcucG5n) ;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .ExperiencesSlider_card{
         transition: 500ms;
@@ -516,7 +527,10 @@ width: 30rem;
    
   }
 .ESC_top{
-    color: #ffffff;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    color:rgb(24,66,181);
+    background-color: white;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -582,12 +596,12 @@ overflow: hidden;
 
 }
 .hidden{
-    transition: 2s;  
+    transition: 500ms;  
     opacity: 0;
-    transform: translateX(8rem) ;
+    transform: translateX(5rem) ;
   }
   .hiddenn{
-    transition: 2s;  
+    transition: 1s;  
     opacity: 0;
     transform: translateY(8rem) ;
   }
