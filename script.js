@@ -133,3 +133,14 @@ const navOptions = document.querySelectorAll(".navoption");
             option.classList.add("navactive");
         });
     });
+
+    function MouseFollowers() {
+     let follower = document.querySelector('.cursor');
+     window.addEventListener('mousemove', (e) => {
+      const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+        follower.style.transform = `translate(${e.clientX + scrollX}px, ${e.clientY + scrollY}px)`;
+   
+     });
+    }
+    MouseFollowers();

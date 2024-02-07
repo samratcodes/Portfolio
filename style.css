@@ -9,6 +9,24 @@ body{
     background-color: rgb(219,220,225);
     font-family: 'Inter', sans-serif;
 }
+.cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 2rem;
+    height: 1.5rem;
+    border-radius: 50%;
+   background-color: yellow;
+    clip-path: polygon(50% 1, 100% 50%, 50% 100%, 1 50%);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: cubic-bezier(0.65, 0.82, 0.465, 1) 0.2s;
+   mix-blend-mode:difference;
+
+}
 header{
     position: sticky;
     top:0.3rem;
@@ -90,18 +108,27 @@ nav{
 }
 .Download{
     margin: 2rem;
+    width: max-content;
+    transition: 200ms;
+    box-shadow:  9px -9px 18px #ffffff,
+    -10px 18px 10px #686868;
+}
+.Download:hover{
+transition: 200ms;
+    box-shadow:  9px -9px 18px #ffffff,
+    -10px 5px 10px #ffffff;
 }
 .Download i{
     font-weight: 600;
     font-size: 1.5rem;
-    color: rgb(24,66,181);
+    color: rgb(255, 255, 255);
 }
 .Download a{
     font-weight: 600;
     font-size: 1.2rem;
 text-decoration: none;
-background-color: rgb(167, 171, 184);
 border: 2px solid  rgb(255, 255, 255);
+background:rgb(24,66,181);
 padding:0.5rem;
 border-radius: 1rem;
 color: rgb(255, 255, 255);
@@ -109,10 +136,10 @@ transition: 500ms;
 }
 .Download a:hover{
     transition: 300ms;
+    background-color: rgb(167, 171, 184);
     border: 2px solid  rgb(255, 255, 255);
-    background:rgb(24,66,181);
     i{
-        color: rgb(255, 255, 255);
+        color: rgb(24,66,181);
     }
 }
 .card{
@@ -242,13 +269,13 @@ main{
     font-size: 1.4rem;
 }
 .links a{
-    background-color: rgb(219,220,225);
-    border: 2px solid rgb(219,220,225) ;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255) ;
     color:rgb(24,66,181);
     border-radius: 50%;
     padding:0.7rem 1rem;
     box-shadow:  9px -9px 18px #c4c4c4,
-    -9px 9px 8px #acacac;
+    -9px 9px 8px #898989;
     transition: 1s;
 }
 .links a:hover{
