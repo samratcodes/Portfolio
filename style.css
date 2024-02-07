@@ -14,8 +14,8 @@ body{
     top: 0;
     left: 0;
     z-index: 5000;
-    width: 2rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
    background-color: yellow;
     clip-path: polygon(50% 1, 100% 50%, 50% 100%, 1 50%);
